@@ -1,4 +1,4 @@
-Un ***unit test***, como vimos en la introducción, es un segmento de código que realiza una verificación de una única ( en lo posible ) expectativa.
+Un ***unit test***, como vimos en la introducción, es un segmento de código que realiza una verificación de una única ( en lo posible ) expectativa. 
  
 Durante el desarrollo de un componente de software vamos a crear muchos ***unit test*** para cubrir diferentes casos de uso. La cantidad de unit test a crear dependerá de las especificaciones que hayamos recibido. Por ejemplo, en el caso de una calculadora podemos ver esta historia de usuario:
  

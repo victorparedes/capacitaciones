@@ -1,4 +1,4 @@
-## Ejecucion de pruebas unitarias en diferentes entornos
+## Ejecución de pruebas unitarias en diferentes entornos
 
 La ejecución local de los test tiene casi completamente como objetivo validar los cambios que estamos realizando en nuestro código. Respetando la pirámide de red-green-refactor con lo cual nos va a resultar útil solamente ejecutar los test que correspondan al componente que estamos tocando. En este entorno es en donde nosotros, los devs, sacamos provecho a las pruebas unitarias escritas.
  
@@ -8,7 +8,7 @@ Durante un escenario de integración continua, la ejecución de los test unitari
  
 Otro escenario donde podemos sacar provecho de las pruebas unitarias es en continuos delivery. Al momento de programar un deploy a un entorno nuestras pruebas unitarias pueden ejecutarse para validar que el producto que vamos a entregar cumpla con los casos de usos que cada componente tiene redactado. Las herramientas de continuous delivery tienen forma de ejecutar, analizar y proceder dependiendo de los resultados de los test.
 
-## Metricas
+## Métricas
 
 La principal métrica de TDD es el code coverage, este valor es el porcentaje de líneas de código en nuestro proyecto que están avaladas por al menos una prueba unitaria. Es decir...
  
