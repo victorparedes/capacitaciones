@@ -22,6 +22,7 @@ Un ***unit test*** se organiza internamente en tres secciones principales. Cada 
 <p align="center">
   <img src="imgs/arrange-act-assert.jpg">
 </p> 
+
 - *Arrange:* Es la sección donde vamos a realizar la preparación de nuestro entorno, aquí es donde se declaran todas las condiciones que el unit test va a necesitar para funcionar.
  
 - *Act:* Es la ejecución de la prueba propiamente dicha. Esta ejecución deberá, al finalizar, entregar un resultado que será evaluado en la próxima sección.
@@ -64,12 +65,9 @@ Una vez cumplido los tres pasos podemos continuar incrementando la cantidad de *
 
 Un ***unit test*** debe respetar con algunos criterios importantes representados por este el principio [FIRST](https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/):
 
-- **F** ast: Debe ser rapido.
-- **I** ndependient: No depender de otros test.
-- **R** epeteable: Siempre debe devolver el mismo resultado.
-- **S** elf-validating: Deben devolver verde o rojo.
-- **T** imely: Debem ser escritos en el momento oportuno.
-
+<p align="center">
+  <img src="imgs/first.png">
+</p>
 
 *Deben ser rápidas debido a que queremos ejecutarlos seguido.* Imaginemos que estamos mejorando la performance de un componente, con cada cambio vamos a ejecutar todos los ***unit tests*** del componente y queremos tener el resultado lo antes posible.
 
