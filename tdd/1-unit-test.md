@@ -19,7 +19,9 @@ Todos los casos pueden ser válidos, es necesario que seamos sabios para colocar
 ## Estructura de un test
 
 Un ***unit test*** se organiza internamente en tres secciones principales. Cada una de ellas cumple con un propósito dentro de la prueba:
- 
+<p align="center">
+  <img src="imgs/arrange-act-assert.jpg">
+</p> 
 - *Arrange:* Es la sección donde vamos a realizar la preparación de nuestro entorno, aquí es donde se declaran todas las condiciones que el unit test va a necesitar para funcionar.
  
 - *Act:* Es la ejecución de la prueba propiamente dicha. Esta ejecución deberá, al finalizar, entregar un resultado que será evaluado en la próxima sección.
@@ -46,7 +48,10 @@ describe("calculator", () => {
 
 ## red-green-refactor
 Escribir un ***unit test*** lleva repetir los mismos tres pasos una y otra vez hasta conseguir el balance entre pocas líneas, código legible y performante. Es importante respetar estos pasos para poder lograr cumplir con ese balance.
- 
+<p align="center">
+  <img src="imgs/red-green-refactor.png">
+</p>
+
 1. *RED:* Este paso se llama rojo debido a que el objetivo del mismo es crear un unit test que falle. La falla va a corresponder a que aún no existe código en nuestro proyecto que cumpla con las expectativas del mismo.
  
 2. *GREEN:* Luego de cumplido el primer paso, realizamos la implementación mínima en nuestro código para que ese unit test cumpla con su expectativa. No es necesario que sea bonito o performante, solo debe funcionar y pasar el unit test.
