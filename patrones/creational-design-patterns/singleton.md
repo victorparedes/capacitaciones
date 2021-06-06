@@ -1,21 +1,21 @@
-# Singlegon
+# Singleton
 <p align="center">
   <img src="../imgs/homeros.jpg">
 </p> 
 
-Singleton es un patrón del tipo creacional, su objetivo principal es que la existencia de una única instancia de un objeto a nivel global. Esto quiere decir, que sin importar en qué parte del código invoquemos a la clase, cada una de las instancias creadas será la misma.
+Singleton es un patrón del tipo creacional, su objetivo principal es asegurar la existencia de una única instancia de un objeto a nivel global. Esto quiere decir, que sin importar en qué parte del código invoquemos a la instancia siempre obtendremos la misma.
 
 ## Beneficios
 
 - Se tiene control absoluto de la instancia ya que la creación de la misma se encuentra en la clase singleton.
 
-- La instancia es "lazy load", esto quiere decir que no se va a crear la instancia de la clase hasta que alguien la necesite con lo cual ahorra recursos.
+- La creación de la instancia es "lazy load", esto quiere crea el objeto en el mismo momento que se necesita con lo cual ahorra recursos y acelera el tiempo de inicio de la aplicación.
 
 - Permite que el objeto sea accesible de manera global.
 
 ## Desventajas
 
-- Dificulta el mantenimiento de la aplicación debido a que si bien controlamos la creación de la instancia la misma puede ser accedida desde cualquier lado. Un cambio simple en el singleton puede afectar el comportamiento en muchos lugares.
+- Dificulta el mantenimiento de la aplicación debido a que, si bien controlamos su creacion, la instancia puede ser accedida desde cualquier lado. Un cambio simple en el singleton puede afectar el comportamiento en muchos lugares.
 
 - La concurrencia puede ser un problema. Un sistema con muchos usuarios accediendo a la misma instancia puede ocasionar un "cuello de botella". Por ejemplo si usamos un singleton para acceder a una impresora.
 
@@ -23,9 +23,9 @@ Singleton es un patrón del tipo creacional, su objetivo principal es que la exi
 
 ## Uso en casos reales.
 
-Uno de los casos de uso mas comun en este patron es para asegurar que un recurso fisico tenga un unico acceso. Por ejemplo, una base de datos, un archivo o una impresora.
+Uno de los casos mas comunes es para asegurar que un recurso fisico tenga un unico acceso. Por ejemplo, una base de datos, un archivo o una impresora.
 
-Este patron nos asegura que solamente se acceda por una unica instancia y que sin importar que de ejecute desde otro thread sera siempre la misma instancia.
+Este patron nos asegura que solamente se acceda al recurso por una unica instancia sin importar de donde se lo invoque.
 
 La siguiente es una implementacion de un singleton thread safe en c#>
 
