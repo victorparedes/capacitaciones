@@ -3,6 +3,7 @@
   <img src="../imgs/homeros.jpg">
 </p> 
 
+## Definicion
 Singleton es un patrón del tipo creacional, su objetivo principal es asegurar la existencia de una única instancia de un objeto a nivel global. Esto quiere decir, que sin importar en qué parte del código invoquemos a la instancia siempre obtendremos la misma.
 
 ## Beneficios
