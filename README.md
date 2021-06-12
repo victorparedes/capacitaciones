@@ -4,8 +4,8 @@ La existencia de este repositorio tiene como propósito ejercitar mi mente y man
 Adicionalmente, también lo utilizó como material para el dictado de capacitaciones del programa #reconectar o para referir a cualquier persona que quiera una explicación simple de algún tema relacionado al software.
 
 ## Índice
-[Desarrollo guiado por pruebas unitarias ( TDD )](tdd)
-[Patrones de diseño](patrones)
+- [Desarrollo guiado por pruebas unitarias ( TDD )](tdd)
+- [Patrones de diseño](patrones)
 
 ## Libre de uso
 El contenido es de libre acceso y uso para cualquiera que desee utilizarlo para aprender o enseñar a otros.
