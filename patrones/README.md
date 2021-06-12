@@ -13,7 +13,7 @@ Los patrones creacionales son todos aquellos que nos resuelven problemas con la 
 - Abstract Factory: permite trabajar con objetos de distintas familias de manera que las familias no se mezclen entre sí y haciendo transparente el tipo de familia concreta que se esté usando. El problema a solucionar por este patrón es el de crear diferentes familias de objetos, como por ejemplo, la creación de interfaces gráficas de distintos tipos (ventana, menú, botón, etc.).
 - Builder: abstrae el proceso de creación de un objeto complejo, centralizando dicho proceso en un único punto.
 
-- Factory Method: Centraliza la construccion de una clase en otra clase. Esto nos permite no tener que crear un objeto con todas sus dependencias una y otra ves.
+- [Factory Method:](creational-design-patterns/factory-method.md) Centraliza la construccion de una clase en otra clase. Esto nos permite no tener que crear un objeto con todas sus dependencias una y otra ves.
 
 - Prototype: crea nuevos objetos clonándolos de una instancia ya existente.
 
