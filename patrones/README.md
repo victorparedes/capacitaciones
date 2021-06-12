@@ -17,7 +17,7 @@ Los patrones creacionales son todos aquellos que nos resuelven problemas con la 
 
 - Prototype: crea nuevos objetos clonándolos de una instancia ya existente.
 
-- Singleton: Garantiza que exista una unica instancia de la clase, que la misma sea global y que no se puedan crear instancias por fuera de este patron.
+- [Singleton:](creational-design-patterns/singleton.md) Garantiza que exista una unica instancia de la clase, que la misma sea global y que no se puedan crear instancias por fuera de este patron.
 
 - Model View Controller: Modelo Vista Controlador. Es un patrón de arquitectura de software que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones. Este patrón plantea la separación del problema en tres capas: la capa model, que representa la realidad; la capa controller , que conoce los métodos y atributos del modelo, recibe y realiza lo que el usuario quiere hacer; y la capa vista, que muestra un aspecto del modelo y es utilizada por la capa anterior para interactuar con el usuario.
 
