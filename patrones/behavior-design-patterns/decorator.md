@@ -2,6 +2,7 @@
 <p align="center">
   <img src="../imgs/mamushka.jpg">
 </p> 
+
 ## Definición
 La mejor forma de entender el patron decorator es pensar en las [muñecas mamushka](https://es.wikipedia.org/wiki/Matrioshka). Las muñecas mamushkas son figuras que dentro contiene una figura similar pero mas pequeña, que luego nuevamente contiene otra mas mas pequeña y asi sucesivamente hasta llegar a una muñequita muy chiquita. Imaginemos que cada mamushka tiene una palabra escrita, al comenzar a abrir las muñecas anotamos esa palabra y continuamos abriendolas. Al llegar a la ultima muñeca ( y si anotamos todas las palabras ) tendremos una frase escrita :)
 
