@@ -29,7 +29,7 @@ Los patrones estructurales nos permiten solucionar problemas comunes durante la 
 - Adapter o Wrapper: Adapta una interfaz para que pueda ser utilizada por una clase que de otro modo no podría utilizarla.
 - Bridge: Desacopla una abstracción de su implementación.
 - Composite: Permite tratar objetos compuestos como si de uno simple se tratase.
-- Decorator: Añade funcionalidad a una clase dinámicamente.
+- [Decorator:](behavior-design-patterns/decorator.md): Añade funcionalidad a una clase dinámicamente.
 - Facade: Provee de una interfaz unificada simple para acceder a una interfaz o grupo de interfaces de un subsistema.
 - Flyweight: Reduce la redundancia cuando gran cantidad de objetos poseen idéntica información.
 - Proxy: Proporciona un intermediario de un objeto para controlar su acceso.
