@@ -6,6 +6,7 @@ Adicionalmente, también lo utilizó como material para el dictado de capacitaci
 ## Índice
 - [Desarrollo guiado por pruebas unitarias ( TDD )](tdd)
 - [Patrones de diseño](patrones)
+- [Arquitectura de software](arquitectura)
 
 ## Libre de uso
 El contenido es de libre acceso y uso para cualquiera que desee utilizarlo para aprender o enseñar a otros.
