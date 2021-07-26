@@ -76,6 +76,41 @@ public class MessageSender {
 }
 ```
 
+Otra forma de realizar este tipo de refactoring sin la necesidad de extraer la lógica a un método, solo en casos donde la lógica sea más simple ) es utilizar variables explicativas.
+
+```cs
+public class MessageSender {
+    private _messageBroker = new MessageBroker();
+    private _receptors = new Receptors();
+
+    public void Send(string receptor, string title, string body) 
+    {
+        // Las variables explicativas son mas faciles de leer
+        // cuando la logica es mas simple.
+        bool messageHaveErrors = string.IsNullOrEmpty(receptor) ||
+            string.IsNullOrEmpty(title) ||
+            string.IsNullOrEmpty(body));
+
+        bool receptorHaveErros = _receptors == null || 
+            (_receptors != null && !_receptors.IsValid(receptor)));
+
+        bool messageBrokerHaveErrors = _messageBroker != null || 
+            (_messageBroker != null && !_messageBroker.IsOnline())
+
+        if(messageHaveErrors)
+            throw new Exception('Invalid message');
+
+        if(receptorHaveErros)
+            throw new Exception('error with receptors');
+
+        if(messageBrokerHaveErrors)
+            throw new Exception('error with message broker');
+        
+        _messageBroker.Send(receptor, title, body);
+    }
+}
+```
+
 ## Composicion de metodos
 
 La composición de métodos es una técnica de refactoring que permite a personas sin conocimiento leer el código de nuestras aplicaciones. El objetivo es, básicamente, que los métodos se compongan por métodos más pequeños, con nombres autodescriptivos.
