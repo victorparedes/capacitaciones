@@ -1,28 +1,21 @@
-# Arquitectura basada en microservicios
- 
-Los microservicios son un enfoque arquitectónico y organizativo para el desarrollo de software. A diferencia de una aplicación monolítica ( frontend, backend, datos ), la arquitectura de microservicios se basa en tener un conjunto de servicios que cumplen con diferentes responsabilidades de una aplicación.
- 
-Estos servicios, los cuales llamaremos microservicios, funcionan de manera independiente y autónoma. Cada uno de ellos solo se encarga de implementar una funcionalidad completa del negocio. Por ejemplo: Si pensamos en un editor de textos podremos tener un microservicio que controle la gramática, otro que trabaje con archivos, otro podría trabajar con la impresora y así hasta completar toda la funcionalidad completa de nuestro editor de textos.
+# Arquitecto de software
 
-Existen varios patrones de diseño para los microservicios.
+El arquitecto de software es el rol que define la forma del software que se esta construyendo. No se especializa en el negocio, se especializa en dfeiniciones tecnicas de gran escala aplicando patrones de arquitectura ( microservicios, EDA, N capas, Cliente/Servidor, peer to peer, etc ) 
 
-- Event driven: En este patrón un microservicio publica un evento y otro microservicio lo consumirá.
+Tomando como ejemplo la construccion de una casa, el rol del arquitecto es el que decide donde se ubicaran los ambientes, como se comunicara la cocina con el living. Donde estaran los dormitorios y como deberia verse la fachada de la casa. Luego, con esas definiciones, cada equipo ( albañiles, plomeros, electricistas, pintores ) realizan los trabajos necesarios para completar esa vision.
 
-- Aggregator o Proxy: Un cliente web necesita información que está en varios microservicios. En este caso se invoca a un microservicio que agrega las llamadas a otros microservicios para obtener la respuesta.
+# Patrones de Diseño
 
-- Chained: En este caso se realizan llamadas consecutivas para componer la información.
+Asi como existen patrones de diseño de software ( de creacion, de comportamiento y de comunicacion ) la arquitectura de software tambien tiene sus patrones de diseño.
 
-- Asynchronous messaging: Con un patrón de llamadas REST, las peticiones y llamadas son asíncronas (se pueden hacer implementaciones para llegar a asíncronas); por lo que provoca que en muchas ocasiones se utilice un servicio de mensajería asíncrona como Kafka para enviar información.
-Patrón Saga: El Patrón Saga es una secuencia de transacciones locales donde cada transacción actualiza información dentro de un servicio.
+## Microservicios
+
+La idea de los microservicios es desacomplar lo maximo posible los componentes que nuestra aplicacion necesita. 
 
 
 
-# Ventajas
-- Posibilita la diversidad tecnológica: Es posible utilizar diferentes lenguajes y herramientas para cada microservicio.
- 
-- Fáciles de escalar: Al ser aplicaciones muy pequeñas son más fáciles de crear, mantener y de desplegar en diferentes entornos.
+## Arquitectura por eventos ( EDA o Event-drive Architecture )
 
-# Desventajas
-- Mayor tiempo de diseño: Se requiere una mayor inversión en la planificación para asegurarnos que no exista acoplamiento de servicios.
- 
-- Registro de logs y monitoreo: Cada servicio debe ser monitoreado y registrado correctamente para asegurarnos que nuestra aplicación funciona como corresponde.
+La arquitectura guiada por eventos promueve la division de componentes ( al igual que los microservicios ) pero promoviendo la produccion, deteccion, consumo y reaccion de eventos entre ellos.
+
+Por ejemplo: Si existiera un componente de usuarios y se creara un nuevo usuario, este deberia lanzar un evento "se ha creado el usuario X" para que otros componentes ( como un componente que envia un mail de bienvenida ) puedan actuar en consecuencia de ese mensaje.
