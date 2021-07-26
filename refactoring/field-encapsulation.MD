@@ -1,10 +1,11 @@
 # Encapsulación de propiedades
  
-Durante nuestro trabajo nos encontraremos, habitualmente, en situaciones donde debamos decidir entre: Escalabilidad, performance o claridad en nuestro código. Este caso sucede al momento de decidir cómo vamos a trabajar con las propiedades internas de las clases.
- 
-Existen dos formas de trabajar con ellas. De forma directa y de forma indirecta.
+Durante nuestro trabajo nos encontraremos, habitualmente, en situaciones donde debamos decidir entre: escalabilidad, performance o claridad en nuestro código. El uso de las propiedades internas de una clase es uno de estos momentos en los cuales debemos tomar estas dificiles deciciones.
+
+Existen dos formas de trabajar con las propiedades internas de las clases. De forma indirecta y de forma directa
  
 ## Forma indirecta.
+
 La primera forma es acceder a las propiedades de manera indirecta mediante encapsulación ( geter y seter ). Básicamente cada propiedad tiene un método que establece el valor y otro que lo devuelve.
 
 ```cs
