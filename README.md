@@ -7,6 +7,7 @@ Adicionalmente, también lo utilizó como material para el dictado de capacitaci
 - [Desarrollo guiado por pruebas unitarias ( TDD )](tdd)
 - [Patrones de diseño](patrones)
 - [Arquitectura de software](arquitectura)
+- [​​Técnicas de refactoring](refactoring)
 
 ## Libre de uso
 El contenido es de libre acceso y uso para cualquiera que desee utilizarlo para aprender o enseñar a otros.
