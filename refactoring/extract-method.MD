@@ -91,17 +91,17 @@ public class MessageSender {
             string.IsNullOrEmpty(title) ||
             string.IsNullOrEmpty(body));
 
-        bool receptorHaveErros = _receptors == null || 
-            (_receptors != null && !_receptors.IsValid(receptor)));
-
-        bool messageBrokerHaveErrors = _messageBroker != null || 
-            (_messageBroker != null && !_messageBroker.IsOnline())
-
         if(messageHaveErrors)
             throw new Exception('Invalid message');
 
+        bool receptorHaveErros = _receptors == null || 
+            (_receptors != null && !_receptors.IsValid(receptor)));
+
         if(receptorHaveErros)
             throw new Exception('error with receptors');
+
+        bool messageBrokerHaveErrors = _messageBroker != null || 
+            (_messageBroker != null && !_messageBroker.IsOnline())
 
         if(messageBrokerHaveErrors)
             throw new Exception('error with message broker');
@@ -121,12 +121,17 @@ Esto permite que la lectura de nuestro código sea muy parecida a la lectura de 
 public class MessageSender {
     public void DisplayPerson(string name, List<string> social) 
     {
-        DisplayName(name);
+        DisplayPersonName(name);
         
         foreach(var item in social)
         {
             console.log('Contact to me in... ' + item);            
         }
+    }
+
+    private void DisplayPersonName(name)
+    {
+        console.log('Hi! My name is ' + name);
     }
 }
 ```
@@ -136,8 +141,21 @@ public class MessageSender {
 public class MessageSender {
     public void DisplayPerson(string name, List<string> social) 
     {
-        DisplayName(name);
-        DisplaySocial(social);
+        DisplayPersonName(name);
+        DisplayPersonSocialNetworks(social);
+    }
+
+    private void DisplayPersonName(string name)
+    {
+        console.log('Hi! My name is ' + name);
+    }
+
+    private void DisplayPersonSocialNetworks(List<string> social)
+    {
+        foreach(var item in social)
+        {
+            console.log('Contact to me in... ' + item);            
+        }
     }
 }
 ```

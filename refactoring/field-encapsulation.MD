@@ -27,7 +27,7 @@ public class RangeValidator {
     }
 
     public bool isInRange(int currentValue) {
-        return currentValue >= _miniun && currentValue =< _maximun
+        return currentValue >= this.GetMinimun() && currentValue =< this.GetMaximun();
     }
 }
 ```
@@ -67,9 +67,9 @@ public class AgeValidator {
 }
 
 // Esta clase valida que una persona sea adulta, el minimo es 18
-public class AdultValidator : RangeValidator {
+public class AdultValidator : AgeValidator {
     public override int GetMinimunAge(){
-        if(_minimunAge == 0)
+        if(_minimunAge = 0)
         {
             return 18;
         }

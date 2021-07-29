@@ -41,12 +41,12 @@ public class DaysConversor {
 
     public double ToMinute(int days) 
     {
-        return seconds * 1440;
+        return days * 1440;
     }
 
     public double ToHour(int days) 
     {
-        return seconds * 24
+        return days * 24
     }
 }
 ```
@@ -65,12 +65,12 @@ public class DaysConversor {
 
     public double ToMinute(int days) 
     {
-        return seconds * _MINUTES_IN_ONE_DAY;
+        return days * _MINUTES_IN_ONE_DAY;
     }
 
     public double ToHour(int days) 
     {
-        return seconds * _HOURS_IN_ONE_DAY
+        return days * _HOURS_IN_ONE_DAY
     }
 }
 ```
@@ -84,14 +84,15 @@ Por ejemplo, una clase que ejecuta un POST a varias URLs diferentes en la misma 
 ```cs
 public class ApiComunicator {
 
+    private string _baseUrl;
     public void Post(Client cliente) 
     {
-        clientEndPoint.Post("http://url_to_client", cliente);
+        clientEndPoint.Post(_baseUrl + "/clients/new", cliente);
     }
 
     public void Post(Product producto) 
     {
-        productEndPoint.Post("http://url_to_product", producto);
+        productEndPoint.Post(_baseUrl + "/products/new", producto);
     }
 }
 ```
@@ -99,16 +100,18 @@ public class ApiComunicator {
 ### Corrección
 ```cs
 public class ApiComunicator {
-    public const string _CLIENT_ENDPOINT = "http://url_to_client";
-    public const string _PRODUCT_ENDPOINT = "http://url_to_product";
+    private string _baseUrl;
+    public const string _CLIENT_ENDPOINT = "/clients/new";
+    public const string _PRODUCT_ENDPOINT = "/products/new";
+    
     public void Post(Client cliente) 
     {
-        clientEndPoint.Post(_CLIENT_ENDPOINT, cliente);
+        clientEndPoint.Post(_baseUrl + _CLIENT_ENDPOINT, cliente);
     }
 
     public void Post(Product producto) 
     {
-        productEndPoint.Post(_PRODUCT_ENDPOINT, producto);
+        productEndPoint.Post(_baseUrl + _PRODUCT_ENDPOINT, producto);
     }
 }
 ```
