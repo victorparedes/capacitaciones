@@ -76,7 +76,7 @@ public class MessageSender {
 }
 ```
 
-Otra forma de realizar este tipo de refactoring sin la necesidad de extraer la lógica a un método, solo en casos donde la lógica sea más simple ) es utilizar variables explicativas.
+Otra forma de realizar este tipo de refactoring, sin la necesidad de extraer la lógica a un método, es utilizar variables explicativas. Las variables explicativas son variables comunes y silvestres autodescriptivas que almacenan la complejidad del IF.
 
 ```cs
 public class MessageSender {
@@ -113,8 +113,7 @@ public class MessageSender {
 
 ## Composicion de metodos
 
-La composición de métodos es una técnica de refactoring que permite a personas sin conocimiento leer el código de nuestras aplicaciones. El objetivo es, básicamente, que los métodos se compongan por métodos más pequeños, con nombres autodescriptivos.
-Esto permite que la lectura de nuestro código sea muy parecida a la lectura de un libro tipo "elige tu aventura".
+La composición de métodos permite a personas sin conocimiento leer el código de nuestras aplicaciones. El objetivo es, básicamente, que los métodos se compongan por métodos más pequeños, con nombres autodescriptivos. Esto permite que nuestro código sea muy parecida a la lectura de un libro tipo "elige tu aventura".
 
 ```cs
 // Clase original.
