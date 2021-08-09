@@ -20,8 +20,7 @@ Por que tiene una gran cantidad de beneficios que impactan directamente en la ve
 - Permite realizar mejoras en el codigo de manera mas segura.
 
 ## Índice
-- [Que es un test unitario](0-unit-test.md)
-- [Principios básicos](1-general-aligments.md)
-- [Consideraciones finales](2-final-considerations.md)
-- [Ejemplos](3-real-unit-test-examples.md)
-Que es un test unitario
+- [Que es un test unitario](./0-unit-test.md)
+- [Principios básicos](./1-general-aligments.md)
+- [Consideraciones finales](./2-final-considerations.md)
+- [Ejemplos](./3-real-unit-test-examples.md)
